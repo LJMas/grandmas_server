@@ -1,11 +1,15 @@
-- Build your own webserver using Sinatra-mine is there, but it would be good if you showed grandma you can make your own, too.
+# Grandma's Server
 
-- Create an endpoint that returns a standard greeting a. Can you make this greeting dynamic? b. What if no parameter is given? Can you make the greeting making sense? No Hi, ,! Nice to meet you!
+This project is an example of a simple webserver, created for Grandma, using Sinatra.
 
-- Write a test for your greeting
+- The '/' endpoint returns a standard greeting, "Hi, welcome to Grandma's server!", if no parameters are given.
 
-- Build a second page using TDD that returns some HTML. In this page, add an image of something your grandparent would like!
+- If a name is given, e.g. '/Lucy', it will return "Hi, Lucy, welcome to Grandma's server!".
 
-- Add CSS to your second page.
+- The 'spec' folder contains tests that verify this is indeed the behaviour of the server.
 
-- Could you build a web server WITHOUT Sinatra?
+- There is a second page on Grandma's server, found at the endpoint '/dogs', which displays some pictures of dogs that Grandma likes. The basic parts of this were built using TDD.
+
+- There is some CSS styling in the project (although very minimal).
+
+- The pages are linked by buttons. The welcome page has a button that redirects you to '/dogs' endpoint, and the dogs page has the option to enter your name and on submit you are redirected to '/', either with personalised greeting or with the default greeting, depending on whether or not a name was entered.
