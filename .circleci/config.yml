@@ -27,7 +27,7 @@ jobs:
           command: bundle config set --local path 'vendor/bundle'
       - run:
           name: Check all dependencies are installed
-          command: bundle check
+          command: bundle install
       - run:
           name: Run rspec tests
           command: bundle exec rspec
