@@ -23,7 +23,6 @@ jobs:
           name: Check bundle version
           command: bundle -v
       - run:
-          #command: bundle install --path vendor/bundle
           command: bundle config set --local path 'vendor/bundle'
       - run:
           name: Check all dependencies are installed
