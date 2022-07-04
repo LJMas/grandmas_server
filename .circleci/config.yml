@@ -26,8 +26,8 @@ jobs:
           #command: bundle install --path vendor/bundle
           command: bundle config set --local path 'vendor/bundle'
       - run:
-          name: Make sure rspec is there
-          command: bundle add rspec --skip-install
+          name: Check all dependencies are installed
+          command: bundle check
       - run:
           name: Run rspec tests
           command: bundle exec rspec
