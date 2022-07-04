@@ -13,3 +13,6 @@ This project is an example of a simple webserver, created for Grandma, using Sin
 - There is some CSS styling in the project (although very minimal).
 
 - The pages are linked by buttons. The welcome page has a button that redirects you to '/dogs' endpoint, and the dogs page has the option to enter your name and on submit you are redirected to '/', either with personalised greeting or with the default greeting, depending on whether or not a name was entered.
+
+
+Adding CircleCI for automatic testing.
