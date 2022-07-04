@@ -46,7 +46,7 @@ RSpec.describe "Grandma's server" do
 
     context "Testing circleCI" do
         it "tests what happens if we open a pull request from a branch with failing tests" do
-            expect(false)to be true
+            expect(false).to be true
         end
     end
 
