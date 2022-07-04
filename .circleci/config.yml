@@ -26,8 +26,8 @@ jobs:
           #command: bundle install --path vendor/bundle
           command: bundle config set --local path 'vendor/bundle'
       - run:
-          name: Run rspec tests
-          command: bundle exec rspec
+          name: Make sure rspec is there
+          command: bundle install rspec
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
