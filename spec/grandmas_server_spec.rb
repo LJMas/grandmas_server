@@ -43,4 +43,11 @@ RSpec.describe "Grandma's server" do
             expect(last_response.body).to include "styles.css"
         end
     end
-end
+
+    context "Testing circleCI" do
+        it "tests what happens if we open a pull request from a branch with failing tests" do
+            expect(false)to be true
+        end
+    end
+
+ end
